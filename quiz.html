@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trivia Quiz – Fragen</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="quiz.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header class="quiz-header">
+      <h1>🧠 Quiz</h1>
+      <div class="meta">
+  <span id="progress">Frage 1/10</span>
+  <span id="timer">⏱️ 20s</span>
+  <span id="score">Punkte: 0</span>
+</div>
+
+    </header>
+
+    <section id="question-card" class="card" aria-live="polite">
+      <div id="category-badge" class="badge">Kategorie</div>
+      <h2 id="question">Lade Frage…</h2>
+      <div id="answers" class="answers" role="group" aria-label="Antwortmöglichkeiten"></div>
+      <div class="actions">
+        <button id="next-btn" class="btn" disabled>Weiter</button>
+      </div>
+    </section>
+
+    <footer>
+      <button id="quit-btn" class="btn subtle">Zurück zur Startseite</button>
+    </footer>
+  </main>
+</body>
+</html>

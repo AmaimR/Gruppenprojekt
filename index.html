@@ -1,11 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trivia Quiz – Start</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>🎯 Trivia Quiz</h1>
+      <p>Wähle Kategorie & Schwierigkeit und starte dein Quiz.</p>
+    </header>
 
+    <form id="setup-form" class="card" autocomplete="off">
+      <div class="field">
+        <label for="category">Kategorie</label>
+        <select id="category" name="category" aria-label="Kategorie auswählen">
+          <option value="">Beliebig</option>
+          <!-- wird per JS mit echten Kategorien befüllt -->
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="difficulty">Schwierigkeit</label>
+        <select id="difficulty" name="difficulty" aria-label="Schwierigkeit auswählen">
+          <option value="">Beliebig</option>
+          <option value="easy">Leicht</option>
+          <option value="medium">Mittel</option>
+          <option value="hard">Schwer</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="amount">Anzahl Fragen</label>
+        <input id="amount" name="amount" type="number" min="5" max="25" value="10" />
+      </div>
+
+      <button id="start-btn" class="btn primary" type="submit">Quiz starten</button>
+    </form>
+
+    <footer>
+      <small>Fragen von <a href="https://opentdb.com" target="_blank" rel="noopener">Open Trivia DB</a></small>
+    </footer>
+  </main>
 </body>
 </html>
