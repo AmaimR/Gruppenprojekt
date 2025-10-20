@@ -104,3 +104,17 @@ footer{margin-top:24px; color:var(--muted)}
 @media (min-width: 640px){
   .answers{grid-template-columns: 1fr 1fr}
 }
+
+.timer-hint {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: #a7f3d0;
+  font-size: 0.95rem;
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+.timer-hint strong {
+  color: #4ade80;
+}
