@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const review = JSON.parse(reviewRaw);
   const total = review.length || setup.amount || 0;
 
-  // Ergebnis anzeigen
+  // Ergebnis anzeigen hallo.
   summaryEl.textContent = `Du hast ${score} von ${total} Punkten erreicht.`;
 
   // Antwortübersicht aufbauen
