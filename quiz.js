@@ -117,7 +117,7 @@ function startTimer() {
 }
 
 function updateTimerDisplay() {
-  timerEl.textContent = `⏱️ ${timeLeft}s`;
+  timerEl.textContent = `⏱ ${timeLeft}s`;
   timerEl.style.color = timeLeft <= 5 ? '#ef4444' : '#e5e7eb';
 }
 

@@ -13,7 +13,7 @@ const form = document.getElementById('setup-form');
       opt.textContent = c.name;
       categorySelect.appendChild(opt);
     }
-  } catch (e){
+  } catch (e){ 
     console.warn('Kategorien konnten nicht geladen werden.', e);
   }
 })();
